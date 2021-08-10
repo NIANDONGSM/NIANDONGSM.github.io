@@ -20,28 +20,34 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="念冬的个人博客">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="已知：$S_0$​(即$S_{四边形ABCD}$​),$h_0$​(即$PO_1$),$h_1$​​​(即$O_2O_1$)$V_{P-ABCD}&#x3D;\int_{0}^{h_0} S(h)\mathrm{d}h $ $ \because \left(\frac{h_{0}-h}{h_{0}}\right)^2&#x3D;\frac{s}{s_{0}} \therefore S(h)&#x3D;S_{0}+\frac{s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="锥体（台体）的体积公式推导">
+<meta property="og:url" content="http://example.com/2021/08/10/%E9%94%A5%E4%BD%93%EF%BC%88%E5%8F%B0%E4%BD%93%EF%BC%89%E7%9A%84%E4%BD%93%E7%A7%AF%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC/index.html">
 <meta property="og:site_name" content="念冬的个人博客">
+<meta property="og:description" content="已知：$S_0$​(即$S_{四边形ABCD}$​),$h_0$​(即$PO_1$),$h_1$​​​(即$O_2O_1$)$V_{P-ABCD}&#x3D;\int_{0}^{h_0} S(h)\mathrm{d}h $ $ \because \left(\frac{h_{0}-h}{h_{0}}\right)^2&#x3D;\frac{s}{s_{0}} \therefore S(h)&#x3D;S_{0}+\frac{s">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2021/08/10/%E9%94%A5%E4%BD%93%EF%BC%88%E5%8F%B0%E4%BD%93%EF%BC%89%E7%9A%84%E4%BD%93%E7%A7%AF%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC/.%5Cimages%5Ctaiti1.png">
+<meta property="article:published_time" content="2021-08-10T01:27:12.000Z">
+<meta property="article:modified_time" content="2021-08-10T01:40:45.801Z">
 <meta property="article:author" content="念冬">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2021/08/10/%E9%94%A5%E4%BD%93%EF%BC%88%E5%8F%B0%E4%BD%93%EF%BC%89%E7%9A%84%E4%BD%93%E7%A7%AF%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC/.%5Cimages%5Ctaiti1.png">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2021/08/10/%E9%94%A5%E4%BD%93%EF%BC%88%E5%8F%B0%E4%BD%93%EF%BC%89%E7%9A%84%E4%BD%93%E7%A7%AF%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>念冬的个人博客</title>
+  <title>锥体（台体）的体积公式推导 | 念冬的个人博客</title>
   
 
 
@@ -139,9 +145,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -157,10 +164,9 @@
       <meta itemprop="name" content="念冬的个人博客">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/08/10/%E9%94%A5%E4%BD%93%EF%BC%88%E5%8F%B0%E4%BD%93%EF%BC%89%E7%9A%84%E4%BD%93%E7%A7%AF%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC/" class="post-title-link" itemprop="url">锥体（台体）的体积公式推导</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          锥体（台体）的体积公式推导
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -184,7 +190,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>已知：$S_0$​(即$S_{四边形ABCD}$​),$h_0$​(即$PO_1$),$h_1$​​​(即$O_2O_1$)<br><img src=".%5Cimages%5Ctaiti1.png" alt="taiti1"><br>$V_{P-ABCD}=\int_{0}^{h_0} S(h)\mathrm{d}h $</p>
+        <p>已知：$S_0$​(即$S_{四边形ABCD}$​),$h_0$​(即$PO_1$),$h_1$​​​(即$O_2O_1$)<br><img src=".%5Cimages%5Ctaiti1.png" alt="taiti1"><br>$V_{P-ABCD}=\int_{0}^{h_0} S(h)\mathrm{d}h $</p>
 <p>$ \because \left(\frac{h_{0}-h}{h_{0}}\right)^2=\frac{s}{s_{0}} \therefore S(h)=S_{0}+\frac{s_{0}}{h_{0}^{2}} h^{2}-\frac{2 s_{0}}{h_{0}} h\ $​​</p>
 <p>记$S(h)$原函数为$F(h)$</p>
 <p>$\therefore F(h)=\frac{s_0}{3h_0^2}h^3-\frac{s_0}{h_0}h^2+s_0h$</p>
@@ -193,27 +199,34 @@
 <p>$\because f(x)=ax^3+bx^2+cx+d$​</p>
 <p>$\therefore f^{‘}(x)=\lim\limits_{\Delta x \to 0}\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}$<br>$=\lim \limits_{\Delta x\to0}a\Delta x^2+3ax_0^2+3ax_0^2+3ax_0\Delta x+b\Delta x+2bx_0+c$​<br>$=3ax^2+2bx+c$​</p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
+
+        
+
+
+        
       </footer>
+    
   </article>
   
   
   
 
 
-  
-
-
 
           </div>
           
+    
+  <div class="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC81MzcyNy8zMDIwMA=="></div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -423,6 +436,21 @@
 
   
 
+<script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+});
+</script>
 
 </body>
 </html>
