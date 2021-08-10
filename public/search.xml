@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>锥体（台体）的体积公式推导</title>
+    <url>/2021/08/10/%E9%94%A5%E4%BD%93%EF%BC%88%E5%8F%B0%E4%BD%93%EF%BC%89%E7%9A%84%E4%BD%93%E7%A7%AF%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC/</url>
+    <content><![CDATA[<p>已知：$S_0$​(即$S_{四边形ABCD}$​),$h_0$​(即$PO_1$),$h_1$​​​(即$O_2O_1$)<br><img src="images/taiti1.png" alt="taiti1"><br>$V_{P-ABCD}=\int_{0}^{h_0} S(h)\mathrm{d}h $</p>
+<p>$ \because \left(\frac{h_{0}-h}{h_{0}}\right)^2=\frac{s}{s_{0}} \therefore S(h)=S_{0}+\frac{s_{0}}{h_{0}^{2}} h^{2}-\frac{2 s_{0}}{h_{0}} h\ $​​</p>
+<p>记$S(h)$原函数为$F(h)$</p>
+<p>$\therefore F(h)=\frac{s_0}{3h_0^2}h^3-\frac{s_0}{h_0}h^2+s_0h$</p>
+<p>$\therefore V_{P-ABCD}=\int_{0}^{h_0}S(h)\mathrm{d}h=F(h_0)-F(0)=\frac{1}{3}s_0h_0$<br>$V_{EFGH-ABCD}=\int_{0}^{h_1}S(h)\mathrm{d}h=F(h_1)-F(0)=\frac{s_0h_1^3}{3h_0^2}-\frac{s_0h_1^2}{h_0}+s_0h_1$</p>
+<p>注：原函数的求法</p>
+<p>$\because f(x)=ax^3+bx^2+cx+d$​</p>
+<p>$\therefore f^{‘}(x)=\lim\limits_{\Delta x \to 0}\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}$<br>$=\lim \limits_{\Delta x\to0}a\Delta x^2+3ax_0^2+3ax_0^2+3ax_0\Delta x+b\Delta x+2bx_0+c$​<br>$=3ax^2+2bx+c$​</p>
+]]></content>
+      <tags>
+        <tag>数学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>如何创建一个个人博客1.0</title>
     <url>/2021/08/10/%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21.0/</url>
     <content><![CDATA[<p>本篇文章主要讲述如何通过hexo通过GitHub Pages部署一个next主题的个人博客网站。</p>
@@ -77,22 +93,6 @@
 ]]></content>
       <tags>
         <tag>网站</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>锥体（台体）的体积公式推导</title>
-    <url>/2021/08/10/%E9%94%A5%E4%BD%93%EF%BC%88%E5%8F%B0%E4%BD%93%EF%BC%89%E7%9A%84%E4%BD%93%E7%A7%AF%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC/</url>
-    <content><![CDATA[<p>已知：$S_0$​(即$S_{四边形ABCD}$​),$h_0$​(即$PO_1$),$h_1$​​​(即$O_2O_1$)<br><img src="images/taiti1.png" alt="taiti1"><br>$V_{P-ABCD}=\int_{0}^{h_0} S(h)\mathrm{d}h $</p>
-<p>$ \because \left(\frac{h_{0}-h}{h_{0}}\right)^2=\frac{s}{s_{0}} \therefore S(h)=S_{0}+\frac{s_{0}}{h_{0}^{2}} h^{2}-\frac{2 s_{0}}{h_{0}} h\ $​​</p>
-<p>记$S(h)$原函数为$F(h)$</p>
-<p>$\therefore F(h)=\frac{s_0}{3h_0^2}h^3-\frac{s_0}{h_0}h^2+s_0h$</p>
-<p>$\therefore V_{P-ABCD}=\int_{0}^{h_0}S(h)\mathrm{d}h=F(h_0)-F(0)=\frac{1}{3}s_0h_0$<br>$V_{EFGH-ABCD}=\int_{0}^{h_1}S(h)\mathrm{d}h=F(h_1)-F(0)=\frac{s_0h_1^3}{3h_0^2}-\frac{s_0h_1^2}{h_0}+s_0h_1$</p>
-<p>注：原函数的求法</p>
-<p>$\because f(x)=ax^3+bx^2+cx+d$​</p>
-<p>$\therefore f^{‘}(x)=\lim\limits_{\Delta x \to 0}\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}$<br>$=\lim \limits_{\Delta x\to0}a\Delta x^2+3ax_0^2+3ax_0^2+3ax_0\Delta x+b\Delta x+2bx_0+c$​<br>$=3ax^2+2bx+c$​</p>
-]]></content>
-      <tags>
-        <tag>数学</tag>
       </tags>
   </entry>
 </search>
